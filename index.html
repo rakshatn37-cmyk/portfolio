@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahana N | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: white;
+            color: black;
+            line-height: 1.6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 86%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            background: #111314;
+            color: white;
+            border-bottom: 4px solid #00bc8c;
+            padding: 22px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 28px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color:00bcbc;
+        }
+
+        .hero {
+            height: 170px;
+            background: linear-gradient(rgba(22,35,45,0.9), rgba(22,35,45,0.9)),
+            url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97') center/cover;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        #about {
+            background: white;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #00bc8c;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #0a0b1d;
+            margin-bottom: 20px;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 65px;
+            height: 5px;
+            background: #00bc8c;
+            margin-top: 8px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        #education, #projects {
+            background: #f7f7f7;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #eaf7f4;
+            padding: 10px 16px;
+            margin: 8px;
+            border-radius: 20px;
+            border-left: 4px solid #00bc8c;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #16232d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media(max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1> Sahana N </h1>
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#certificates">CERTIFICATES</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<div class="hero"></div>
+
+<section id="about">
+    <div class="container">
+        <div class="about-content">
+            <img src="sahana.jpeg" alt="Sahana N Profile Photo" class="profile-img">
+
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Sahana N., a B.Tech student in Artificial Intelligence and Data Science at Reva University. 
+                    Having completed my schooling and pre-university education in Bangalore, I have developed a strong interest in technology, problem-solving, and innovation. 
+                    I am passionate about exploring the fields of AI and data science while continuously expanding my knowledge and skills through academic and practical experiences
+                </p>
+
+                <p><b>Professional Tagline:</b> Computer Science Student</p>
+                <p><b>Hobbies:</b> Dancing, Listening to Music, Reading Books</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="card">
+            <p><b>Degree:</b> B.Tech in Artificial Intelligence and Data Science</p>
+            <p><b>College:</b> Mount Carmel PU College </p>
+            <p><b>University:</b> Reva University, Bangalore - 560064</p>
+            <p><b>Semester:</b> 2nd Semester /p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="card skills">
+            <span>Communication</span>
+            <span>Team Work</span>
+            <span>Python</span>
+            <span>C Programming</span>
+            <span>Advanced C</span>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="card">
+            <p><b>2D Graphics Editor:</b> Menu-driven graphics editor using C.</p>
+            <p><b>Cybercrime Report:</b> Study of cybercrime and prevention.</p>
+            <p><b>Automated Fire Fighting System:</b> IoT-based fire detection and control system.</p>
+        </div>
+    </div>
+</section>
+
+<section id="certificates">
+    <div class="container">
+        <h2>Achievements & Certifications</h2>
+        <div class="card">
+            <p>IBM Skilled Online Course</p>
+            <p>Instagram Design System Course</p>
+            <p>Wadhwani Foundation Certification</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+            <p><b>Email:</b> sahananatrajan412@gmail.com </p>
+            <p><b>Phone:</b> 9535495090 </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Sahana N. Portfolio Website.</p>
+</footer>
+
+</body>
+</html>
